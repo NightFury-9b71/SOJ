@@ -1,19 +1,19 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var textarea = document.getElementById('code');
+document.addEventListener('DOMContentLoaded', function() {
+    var textarea = document.getElementById('code');
 
-//     textarea.addEventListener('keydown', function(e) {
-//         if (e.key === 'Tab') {
-//             e.preventDefault();
+    textarea.addEventListener('keydown', function(e) {
+        if (e.key === 'Tab') {
+            e.preventDefault();
 
-//             var start = this.selectionStart;
-//             var end = this.selectionEnd;
+            var start = this.selectionStart;
+            var end = this.selectionEnd;
 
-//             this.value = this.value.substring(0, start) + '\t' + this.value.substring(end);
+            this.value = this.value.substring(0, start) + '\t' + this.value.substring(end);
 
-//             this.selectionStart = this.selectionEnd = start + 1;
-//         }
-//     });
-// });
+            this.selectionStart = this.selectionEnd = start + 1;
+        }
+    });
+});
 
 
 function expand(element){
